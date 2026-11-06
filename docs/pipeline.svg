@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400" width="1000" height="400" font-family="-apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+  <title>Three test levels: the same command reaches the in-car assistant as clean text, with simulated speech-recognition errors, or as real speech with cabin noise transcribed by Whisper</title>
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: #f6f8fa; stroke: #d0d7de; stroke-width: 1.5; }
+    .llm { fill: #ddf4ff; stroke: #54aeff; }
+    .car { fill: #dafbe1; stroke: #4ac26b; }
+    .noise { fill: #fff8c5; stroke: #d4a72c; }
+    .t { fill: #1f2328; font-size: 14px; font-weight: 600; text-anchor: middle; }
+    .s { fill: #59636e; font-size: 11.5px; text-anchor: middle; }
+    .ex { fill: #59636e; font-size: 11.5px; font-style: italic; }
+    .lab { font-size: 12px; font-weight: 700; letter-spacing: .8px; }
+    .l0 { fill: #2a78d6; } .l1 { fill: #eb6834; } .l2 { fill: #1a7f37; }
+    .flow { fill: none; stroke: #8c959f; stroke-width: 2; stroke-dasharray: 6 5; animation: flow 1s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -11; } }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #0d1117; }
+      .box { fill: #161b22; stroke: #3d444d; }
+      .llm { fill: #0c2d6b; stroke: #388bfd; }
+      .car { fill: #0f3d1d; stroke: #2ea043; }
+      .noise { fill: #3b2e00; stroke: #bb8009; }
+      .t { fill: #f0f6fc; }
+      .s, .ex { fill: #9198a1; }
+      .flow { stroke: #656c76; }
+      .l0 { fill: #4493f8; } .l1 { fill: #f0883e; } .l2 { fill: #3fb950; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .flow { animation: none; }
+      .moving { display: none; }
+    }
+  </style>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8c959f"/>
+    </marker>
+  </defs>
+  <rect class="bg" width="1000" height="400" rx="10"/>
+
+  <!-- lane labels -->
+  <text class="lab l0" x="200" y="48">LEVEL 0 · CLEAN TEXT · cost 1</text>
+  <text class="lab l1" x="200" y="158">LEVEL 1 · SIMULATED ASR ERRORS · cost 1</text>
+  <text class="lab l2" x="200" y="278">LEVEL 2 · REAL SPEECH + CABIN NOISE · cost 3 (≈20 in a real car)</text>
+
+  <!-- connectors -->
+  <g class="flow" marker-end="url(#arr)">
+    <path d="M160,190 H182 V62 H745 V166"/>
+    <path d="M160,200 H328"/>
+    <path d="M500,200 H678"/>
+    <path d="M160,210 H182 V320 H198"/>
+    <path d="M330,320 H348"/>
+    <path d="M480,320 H498"/>
+    <path d="M630,320 H745 V234"/>
+    <path d="M810,200 H848"/>
+  </g>
+
+  <!-- boxes -->
+  <rect class="box" x="10" y="170" width="150" height="60" rx="8"/>
+  <rect class="box" x="330" y="170" width="170" height="60" rx="8"/>
+  <rect class="box" x="200" y="290" width="130" height="60" rx="8"/>
+  <rect class="box noise" x="350" y="290" width="130" height="60" rx="8"/>
+  <rect class="box" x="500" y="290" width="130" height="60" rx="8"/>
+  <rect class="box llm" x="680" y="170" width="130" height="60" rx="8"/>
+  <rect class="box car" x="850" y="170" width="140" height="60" rx="8"/>
+
+  <!-- moving dots: one per level -->
+  <g class="moving">
+    <circle class="l0" r="7"><animateMotion dur="4s" repeatCount="indefinite" path="M85,200 H182 V62 H745 V200 H920"/></circle>
+    <circle class="l1" r="7"><animateMotion dur="4s" begin="1.3s" repeatCount="indefinite" path="M85,200 H920"/></circle>
+    <circle class="l2" r="7"><animateMotion dur="6s" begin="0.6s" repeatCount="indefinite" path="M85,200 H182 V320 H745 V200 H920"/></circle>
+  </g>
+
+  <!-- labels -->
+  <text class="t" x="85" y="196">Test command</text>
+  <text class="s" x="85" y="214">30 tests, expected state</text>
+  <text class="t" x="415" y="196">ASR-style rules</text>
+  <text class="s" x="415" y="214">to → two, 22 → twenty two</text>
+  <text class="t" x="265" y="316">Speech</text>
+  <text class="s" x="265" y="334">macOS say</text>
+  <text class="t" x="415" y="316">+ Cabin noise</text>
+  <text class="s" x="415" y="334">ffmpeg, white noise</text>
+  <text class="t" x="565" y="316">Whisper</text>
+  <text class="s" x="565" y="334">faster-whisper base.en</text>
+  <text class="t" x="745" y="196">LLM assistant</text>
+  <text class="s" x="745" y="214">tool calling</text>
+  <text class="t" x="920" y="196">Mock car</text>
+  <text class="s" x="920" y="214">state → pass / fail</text>
+
+  <!-- what the assistant actually receives -->
+  <text class="ex" x="200" y="84">"Set the temperature to 22 degrees"</text>
+  <text class="ex" x="490" y="252">"set the temperature two twenty two degrees"</text>
+  <text class="ex" x="500" y="374">"Set the temperature to 32 degrees."</text>
+</svg>
