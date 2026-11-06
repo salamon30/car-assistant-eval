@@ -1,0 +1,271 @@
+test_id,level,run,passed,heard,got,seconds
+t01,0,0,1,Set the temperature to 22 degrees,{'temperature_c': 22},2.0
+t01,0,1,1,Set the temperature to 22 degrees,{'temperature_c': 22},1.83
+t01,0,2,1,Set the temperature to 22 degrees,{'temperature_c': 22},1.18
+t01,1,0,0,set the temperature two twenty two degrees,{'temperature_c': 22.2},2.45
+t01,1,1,0,set the temperature two twenty two degrees,{'temperature_c': 22.2},6.8
+t01,1,2,0,set the temperature two twenty two degrees,{'temperature_c': 22.2},24.92
+t01,2,0,0,Set the temperature to 32 degrees.,{'temperature_c': 21.0},7.78
+t01,2,1,1,We've got the temperature to 22 degrees.,{'temperature_c': 22},6.52
+t01,2,2,0,Set the temperature to 40 degrees.,{'temperature_c': 21.0},6.45
+t02,0,0,1,Make it 30 degrees in here,{'temperature_c': 21.0},5.44
+t02,0,1,1,Make it 30 degrees in here,{'temperature_c': 21.0},4.52
+t02,0,2,1,Make it 30 degrees in here,{'temperature_c': 21.0},6.02
+t02,1,0,1,make it thirty degrees in here,{'temperature_c': 21.0},6.09
+t02,1,1,1,make it thirty degrees in here,{'temperature_c': 21.0},5.44
+t02,1,2,1,make it thirty degrees in here,{'temperature_c': 21.0},3.44
+t02,2,0,1,Make a 30 degree from here.,{'temperature_c': 21.0},4.92
+t02,2,1,1,Make it ready to breathe in here.,{'temperature_c': 21.0},4.95
+t02,2,2,1,Make sure that you can hear it.,{'temperature_c': 21.0},5.24
+t03,0,0,1,Take me to Munich Airport,{'destination': 'Munich Airport'},1.94
+t03,0,1,1,Take me to Munich Airport,{'destination': 'Munich Airport'},1.23
+t03,0,2,1,Take me to Munich Airport,{'destination': 'Munich Airport'},1.63
+t03,1,0,1,take me two munik airport,{'destination': 'Munich Airport'},1.51
+t03,1,1,1,take me two munik airport,{'destination': 'Munich Airport'},1.78
+t03,1,2,1,take me two munik airport,{'destination': 'Munich Airport'},2.39
+t03,2,0,1,Take me to Munich Airport.,{'destination': 'Munich Airport'},4.63
+t03,2,1,0,Take me from Univerr's life.,"{'destination': ""Univerr's life""}",5.96
+t03,2,2,0,Take me from Munich Air Force.,{'destination': 'Munich Air Force'},8.5
+t04,0,0,1,Set the volume to 7,{'volume': 7},1.12
+t04,0,1,1,Set the volume to 7,{'volume': 7},1.14
+t04,0,2,1,Set the volume to 7,{'volume': 7},1.83
+t04,1,0,1,set the volume two seven,{'volume': 7},5.24
+t04,1,1,1,set the volume two seven,{'volume': 7},3.87
+t04,1,2,1,set the volume two seven,{'volume': 7},4.61
+t04,2,0,1,Set the volume to seven.,{'volume': 7},3.17
+t04,2,1,1,Set the volume to seven.,{'volume': 7},3.11
+t04,2,2,1,Set the volume to seven.,{'volume': 7},3.01
+t05,0,0,1,Make the sound 15,{'volume': 10},3.0
+t05,0,1,1,Make the sound 15,{'volume': 10},2.74
+t05,0,2,1,Make the sound 15,{'volume': 10},6.82
+t05,1,0,0,make the sound fifteen,{'volume': 5},2.15
+t05,1,1,1,make the sound fifteen,{'volume': 10},4.47
+t05,1,2,0,make the sound fifteen,{'volume': 5},6.48
+t05,2,0,0,Make the sound good for you.,{'volume': 7},7.23
+t05,2,1,1,Make the sound 15.,{'volume': 10},8.1
+t05,2,2,0,Make the sound secure.,{'volume': 0},3.35
+t06,0,0,1,Set the temperature to 19 degrees,{'temperature_c': 19},7.19
+t06,0,1,1,Set the temperature to 19 degrees,{'temperature_c': 19},2.03
+t06,0,2,1,Set the temperature to 19 degrees,{'temperature_c': 19},1.27
+t06,1,0,1,set the temperature two 19 degrees,{'temperature_c': 19},2.02
+t06,1,1,1,set the temperature two 19 degrees,{'temperature_c': 19},2.17
+t06,1,2,1,set the temperature two 19 degrees,{'temperature_c': 19},1.98
+t06,2,0,1,Set the temperature to 19 degrees.,{'temperature_c': 19},4.79
+t06,2,1,1,the temperature to 19 degrees.,{'temperature_c': 19},3.14
+t06,2,2,1,Set the temperature to 19 degrees.,{'temperature_c': 19},3.5
+t07,0,0,1,"I'm cold, make it 24",{'temperature_c': 24},4.29
+t07,0,1,1,"I'm cold, make it 24",{'temperature_c': 24},26.0
+t07,0,2,1,"I'm cold, make it 24",{'temperature_c': 24},2.76
+t07,1,0,1,"i'm cold, make it 24",{'temperature_c': 24},3.38
+t07,1,1,1,"i'm cold, make it 24",{'temperature_c': 24},2.05
+t07,1,2,1,"i'm cold, make it 24",{'temperature_c': 24},2.97
+t07,2,0,0,"I'm Cole, major 24.",{'temperature_c': 21.0},10.24
+t07,2,1,1,I'm Cole. Make it 24.,{'temperature_c': 24},3.66
+t07,2,2,0,"I'm Cole, NATO 24.",{'temperature_c': 21.0},2.51
+t08,0,0,1,Set the temperature to 16 degrees,{'temperature_c': 16},1.32
+t08,0,1,1,Set the temperature to 16 degrees,{'temperature_c': 16},1.42
+t08,0,2,1,Set the temperature to 16 degrees,{'temperature_c': 16},2.44
+t08,1,0,1,set the temperature two 16 degrees,{'temperature_c': 16},2.18
+t08,1,1,1,set the temperature two 16 degrees,{'temperature_c': 16},1.9
+t08,1,2,1,set the temperature two 16 degrees,{'temperature_c': 16},1.65
+t08,2,0,1,Set the temperature to 16 degrees.,{'temperature_c': 16},2.98
+t08,2,1,1,Set the temperature to 16 degrees.,{'temperature_c': 16},3.27
+t08,2,2,1,Set the temperature to 16 degrees.,{'temperature_c': 16},2.95
+t09,0,0,1,Set the temperature to 28 degrees,{'temperature_c': 28},1.46
+t09,0,1,1,Set the temperature to 28 degrees,{'temperature_c': 28},2.45
+t09,0,2,1,Set the temperature to 28 degrees,{'temperature_c': 28},2.66
+t09,1,0,1,set the temperature two 28 degrees,{'temperature_c': 28},2.98
+t09,1,1,1,set the temperature two 28 degrees,{'temperature_c': 28},2.22
+t09,1,2,1,set the temperature two 28 degrees,{'temperature_c': 28},2.01
+t09,2,0,0,Set the temperature to 78 degrees.,{'temperature_c': 25.6},27.44
+t09,2,1,0,That's a temperature for 38 degrees.,{'temperature_c': 21.0},5.91
+t09,2,2,0,Check the temperature to 78 degrees.,{'temperature_c': 25.6},15.78
+t10,0,0,1,Make it 35 degrees,{'temperature_c': 21.0},3.96
+t10,0,1,1,Make it 35 degrees,{'temperature_c': 21.0},4.57
+t10,0,2,1,Make it 35 degrees,{'temperature_c': 21.0},3.41
+t10,1,0,1,make it 35 degrees,{'temperature_c': 21.0},5.3
+t10,1,1,1,make it 35 degrees,{'temperature_c': 21.0},5.6
+t10,1,2,1,make it 35 degrees,{'temperature_c': 21.0},5.59
+t10,2,0,1,Make the 35 degrees.,{'temperature_c': 21.0},5.06
+t10,2,1,1,Make it 35 degrees.,{'temperature_c': 21.0},4.22
+t10,2,2,1,Make the 35 degrees.,{'temperature_c': 21.0},5.85
+t11,0,0,1,Set the temperature to 10 degrees,{'temperature_c': 21.0},7.44
+t11,0,1,1,Set the temperature to 10 degrees,{'temperature_c': 21.0},3.29
+t11,0,2,1,Set the temperature to 10 degrees,{'temperature_c': 21.0},3.37
+t11,1,0,1,set the temperature two 10 degrees,{'temperature_c': 21.0},3.58
+t11,1,1,1,set the temperature two 10 degrees,{'temperature_c': 21.0},7.33
+t11,1,2,1,set the temperature two 10 degrees,{'temperature_c': 21},5.41
+t11,2,0,1,Let's set the temperature to 10 degrees.,{'temperature_c': 21.0},5.26
+t11,2,1,1,Set the temperature to 10 degrees.,{'temperature_c': 21.0},3.57
+t11,2,2,1,Set the temperature to 10 degrees.,{'temperature_c': 21.0},3.54
+t12,0,0,1,Change the temperature to 23.5 degrees,{'temperature_c': 23.5},5.3
+t12,0,1,1,Change the temperature to 23.5 degrees,{'temperature_c': 23.5},5.48
+t12,0,2,1,Change the temperature to 23.5 degrees,{'temperature_c': 23.5},2.91
+t12,1,0,1,change the temperature two 23.5 degrees,{'temperature_c': 23.5},2.48
+t12,1,1,1,change the temperature two 23.5 degrees,{'temperature_c': 23.5},2.33
+t12,1,2,1,change the temperature two 23.5 degrees,{'temperature_c': 23.5},4.98
+t12,2,0,0,Change the temperature to 33.5 degrees.,{'temperature_c': 21.0},5.78
+t12,2,1,0,Change the temperature to 43.5 degrees.,{'temperature_c': 21.0},6.45
+t12,2,2,0,Change the temperature to 33.5 degrees.,{'temperature_c': 21.0},12.08
+t13,0,0,1,Turn the heat down to 18,{'temperature_c': 18},2.45
+t13,0,1,1,Turn the heat down to 18,{'temperature_c': 18},2.19
+t13,0,2,1,Turn the heat down to 18,{'temperature_c': 18},6.78
+t13,1,0,1,turn the heat down two 18,{'temperature_c': 18},6.75
+t13,1,1,1,turn the heat down two 18,{'temperature_c': 18},1.9
+t13,1,2,1,turn the heat down two 18,{'temperature_c': 18},2.05
+t13,2,0,1,Turn the beast down to 18.,{'temperature_c': 18},5.3
+t13,2,1,1,And he's down to 18.,{'temperature_c': 18},7.99
+t13,2,2,1,Time to get down to 18.,{'temperature_c': 18},6.49
+t14,0,0,1,Set the volume to 3,{'volume': 3},2.4
+t14,0,1,1,Set the volume to 3,{'volume': 3},1.66
+t14,0,2,1,Set the volume to 3,{'volume': 3},1.12
+t14,1,0,1,set the volume two 3,{'volume': 3},2.06
+t14,1,1,1,set the volume two 3,{'volume': 3},1.25
+t14,1,2,1,set the volume two 3,{'volume': 3},6.63
+t14,2,0,1,Set the volume to three.,{'volume': 3},3.35
+t14,2,1,1,Set the volume to three.,{'volume': 3},2.83
+t14,2,2,1,Set the volume to 3.,{'volume': 3},10.57
+t15,0,0,1,Mute the music,{'volume': 0},1.88
+t15,0,1,1,Mute the music,{'volume': 0},1.9
+t15,0,2,1,Mute the music,{'volume': 0},1.81
+t15,1,0,1,mute the music,{'volume': 0},1.46
+t15,1,1,1,mute the music,{'volume': 0},1.69
+t15,1,2,1,mute the music,{'volume': 0},1.43
+t15,2,0,0,Use the music.,{'volume': 5},4.61
+t15,2,1,0,Here's the music.,{'volume': 5},3.36
+t15,2,2,0,Here's the music.,{'volume': 5},4.18
+t16,0,0,1,Turn the volume all the way up,{'volume': 10},2.09
+t16,0,1,1,Turn the volume all the way up,{'volume': 10},2.19
+t16,0,2,1,Turn the volume all the way up,{'volume': 10},3.03
+t16,1,0,1,turn the volume all the way up,{'volume': 10},2.17
+t16,1,1,1,turn the volume all the way up,{'volume': 10},1.88
+t16,1,2,1,turn the volume all the way up,{'volume': 10},2.4
+t16,2,0,0,Turn the volume off of the block.,{'volume': 0},5.04
+t16,2,1,1,Turn the volume all the way up.,{'volume': 10},7.02
+t16,2,2,1,Turn the volume all the way up.,{'volume': 10},3.58
+t17,0,0,1,Set the volume to 0,{'volume': 0},1.25
+t17,0,1,1,Set the volume to 0,{'volume': 0},1.13
+t17,0,2,1,Set the volume to 0,{'volume': 0},1.53
+t17,1,0,0,set the volume two 0,{'volume': 2},8.82
+t17,1,1,0,set the volume two 0,{'volume': 2},4.7
+t17,1,2,0,set the volume two 0,{'volume': 10},6.2
+t17,2,0,0,Check the volume to do it.,{'volume': 5},6.52
+t17,2,1,0,It's like a volume to hear us.,{'volume': 7},6.52
+t17,2,2,1,Set the volume to 0.,{'volume': 0},11.11
+t18,0,0,1,Volume 4 please,{'volume': 4},1.59
+t18,0,1,1,Volume 4 please,{'volume': 4},4.2
+t18,0,2,1,Volume 4 please,{'volume': 4},3.26
+t18,1,0,1,volume 4 please,{'volume': 4},2.83
+t18,1,1,1,volume 4 please,{'volume': 4},3.13
+t18,1,2,1,volume 4 please,{'volume': 4},4.8
+t18,2,0,0,Call enforcement.,{'volume': 5},4.12
+t18,2,1,0,Volume 14.,{'volume': 5},8.78
+t18,2,2,0,Call him for peace.,{'volume': 5},5.66
+t19,0,0,0,Set the volume to 12,{'volume': 5},8.8
+t19,0,1,0,Set the volume to 12,{'volume': 5},16.59
+t19,0,2,0,Set the volume to 12,{'volume': 5},16.69
+t19,1,0,0,set the volume two 12,{'volume': 5},8.25
+t19,1,1,0,set the volume two 12,{'volume': 5},5.37
+t19,1,2,0,set the volume two 12,{'volume': 5},12.39
+t19,2,0,0,Set the volume to 12.,{'volume': 5},32.32
+t19,2,1,0,Check the volume to 12.,{'volume': 5},12.14
+t19,2,2,0,Check the volume to crawl.,{'volume': 5},7.15
+t20,0,0,1,Navigate to Munich Central Station,{'destination': 'Munich Central Station'},1.74
+t20,0,1,1,Navigate to Munich Central Station,{'destination': 'Munich Central Station'},1.53
+t20,0,2,1,Navigate to Munich Central Station,{'destination': 'Munich Central Station'},1.44
+t20,1,0,0,navigate two munik central station,{'destination': 'Munik Central Station'},2.58
+t20,1,1,0,navigate two munik central station,{'destination': 'Munik Central Station'},2.69
+t20,1,2,0,navigate two munik central station,{'destination': 'Munik Central Station'},3.42
+t20,2,0,1,Navigate to Munich Central Station.,{'destination': 'Munich Central Station'},3.48
+t20,2,1,1,Navigate the Munich Central Station.,{'destination': 'Munich Central Station'},4.41
+t20,2,2,1,Navigate to Munich Central Station.,{'destination': 'Munich Central Station'},3.99
+t21,0,0,1,Take me to Marienplatz,{'destination': 'Marienplatz'},2.83
+t21,0,1,1,Take me to Marienplatz,{'destination': 'Marienplatz'},3.54
+t21,0,2,1,Take me to Marienplatz,{'destination': 'Marienplatz'},3.16
+t21,1,0,1,take me two marienplatz,{'destination': 'Marienplatz'},2.41
+t21,1,1,1,take me two marienplatz,{'destination': 'Marienplatz'},4.38
+t21,1,2,1,take me two marienplatz,{'destination': 'Marienplatz'},4.03
+t21,2,0,0,Take me to Mary's office.,"{'destination': ""Mary's office""}",3.31
+t21,2,1,0,Take me to Mary's life.,{'destination': 'Mary'},10.14
+t21,2,2,0,Take me to Mary's life.,{'destination': 'Mary'},14.02
+t22,0,0,1,Take me to Regensburg,{'destination': 'Regensburg'},1.38
+t22,0,1,1,Take me to Regensburg,{'destination': 'Regensburg'},1.5
+t22,0,2,1,Take me to Regensburg,{'destination': 'Regensburg'},1.33
+t22,1,0,1,take me two regensburg,{'destination': 'Regensburg'},1.85
+t22,1,1,1,take me two regensburg,{'destination': 'Regensburg'},4.21
+t22,1,2,1,take me two regensburg,{'destination': 'Regensburg'},1.85
+t22,2,0,0,Take me to Raven's place.,"{'destination': ""Raven's place""}",4.88
+t22,2,1,0,Take me to Regum first.,{'destination': 'Regum'},5.3
+t22,2,2,0,Take me to live in space.,{'destination': 'space'},10.37
+t23,0,0,1,Navigate to Nuremberg,{'destination': 'Nuremberg'},1.3
+t23,0,1,1,Navigate to Nuremberg,{'destination': 'Nuremberg'},2.67
+t23,0,2,1,Navigate to Nuremberg,{'destination': 'Nuremberg'},1.39
+t23,1,0,1,navigate two nuremberg,{'destination': 'Nuremberg'},1.88
+t23,1,1,1,navigate two nuremberg,{'destination': 'Nuremberg'},1.84
+t23,1,2,1,navigate two nuremberg,{'destination': 'Nuremberg'},2.21
+t23,2,0,0,...mavigation or embrace.,{'destination': None},6.2
+t23,2,1,0,Now the base can remember.,{'destination': None},4.79
+t23,2,2,0,Navigate the member.,{'destination': None},5.76
+t24,0,0,1,Take me to Frankfurt Airport,{'destination': 'Frankfurt Airport'},4.1
+t24,0,1,1,Take me to Frankfurt Airport,{'destination': 'Frankfurt Airport'},2.83
+t24,0,2,1,Take me to Frankfurt Airport,{'destination': 'Frankfurt Airport'},1.54
+t24,1,0,1,take me two frankfurt airport,{'destination': 'Frankfurt Airport'},2.73
+t24,1,1,1,take me two frankfurt airport,{'destination': 'Frankfurt Airport'},2.05
+t24,1,2,1,take me two frankfurt airport,{'destination': 'Frankfurt Airport'},1.72
+t24,2,0,0,Thank you for your support.,{'destination': None},4.95
+t24,2,1,0,Thank you to guys for their voice.,{'destination': None},7.48
+t24,2,2,0,Take me to France for very close.,{'destination': 'France'},3.88
+t25,0,0,1,Navigate to Leopoldstrasse 12,{'destination': 'Leopoldstrasse 12'},1.86
+t25,0,1,1,Navigate to Leopoldstrasse 12,{'destination': 'Leopoldstrasse 12'},1.72
+t25,0,2,1,Navigate to Leopoldstrasse 12,{'destination': 'Leopoldstrasse 12'},1.71
+t25,1,0,0,navigate two leopoldstrasse 12,{'destination': 'Leopoldstraße 12'},5.44
+t25,1,1,0,navigate two leopoldstrasse 12,{'destination': 'two leopoldstrasse 12'},4.42
+t25,1,2,0,navigate two leopoldstrasse 12,{'destination': 'two leopoldstrasse 12'},4.16
+t25,2,0,0,Navigate from Yachos to France.,{'destination': 'France'},4.86
+t25,2,1,0,Navigate the yachos this way.,{'destination': 'Yachos'},4.83
+t25,2,2,0,Navigate the ruffles for sale.,{'destination': 'ruffles for sale'},4.79
+t26,0,0,1,What's the capital of France?,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",8.72
+t26,0,1,1,What's the capital of France?,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",5.02
+t26,0,2,1,What's the capital of France?,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",4.7
+t26,1,0,1,what's the capital of france?,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",6.47
+t26,1,1,1,what's the capital of france?,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",3.95
+t26,1,2,1,what's the capital of france?,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",5.21
+t26,2,0,0,What's the capital address?,"{'temperature_c': 21.0, 'volume': 5, 'destination': 'capital'}",5.87
+t26,2,1,1,What's the capital of France?,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",5.95
+t26,2,2,1,What could happen in a friend?,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",12.92
+t27,0,0,1,Tell me a joke,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",3.08
+t27,0,1,1,Tell me a joke,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",1.02
+t27,0,2,1,Tell me a joke,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",2.09
+t27,1,0,1,tell me a joke,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",1.32
+t27,1,1,1,tell me a joke,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",2.83
+t27,1,2,1,tell me a joke,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",1.52
+t27,2,0,1,"Come here, folks.","{'temperature_c': 21.0, 'volume': 5, 'destination': None}",4.52
+t27,2,1,1,Tell me about it.,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",6.5
+t27,2,2,1,Tell me about it.,"{'temperature_c': 21.0, 'volume': 5, 'destination': None}",6.19
+t28,0,0,1,Take me to Munich Airport and set the volume to 3,"{'destination': 'Munich Airport', 'volume': 3}",2.89
+t28,0,1,1,Take me to Munich Airport and set the volume to 3,"{'destination': 'Munich Airport', 'volume': 3}",2.48
+t28,0,2,1,Take me to Munich Airport and set the volume to 3,"{'destination': 'Munich Airport', 'volume': 3}",1.93
+t28,1,0,1,take me two munik airport and set the volume two 3,"{'destination': 'Munich airport', 'volume': 3}",7.74
+t28,1,1,1,take me two munik airport and set the volume two 3,"{'destination': 'Munich Airport', 'volume': 3}",4.49
+t28,1,2,1,take me two munik airport and set the volume two 3,"{'destination': 'Munich Airport', 'volume': 3}",4.84
+t28,2,0,0,Take me to Munich airport and check the volume to freeze.,"{'destination': 'Munich airport', 'volume': 0}",14.18
+t28,2,1,1,Take me to Munich Airport and set the volume to three.,"{'destination': 'Munich Airport', 'volume': 3}",15.84
+t28,2,2,1,Take me to Munich Airport and set the volume to three.,"{'destination': 'Munich Airport', 'volume': 3}",5.49
+t29,0,0,1,Set the temperature to 20 and the volume to 6,"{'temperature_c': 20, 'volume': 6}",7.24
+t29,0,1,1,Set the temperature to 20 and the volume to 6,"{'temperature_c': 20, 'volume': 6}",2.68
+t29,0,2,1,Set the temperature to 20 and the volume to 6,"{'temperature_c': 20, 'volume': 6}",2.53
+t29,1,0,1,set the temperature two 20 and the volume two 6,"{'temperature_c': 20, 'volume': 6}",2.3
+t29,1,1,1,set the temperature two 20 and the volume two 6,"{'temperature_c': 20, 'volume': 6}",2.38
+t29,1,2,1,set the temperature two 20 and the volume two 6,"{'temperature_c': 20, 'volume': 6}",3.14
+t29,2,0,1,Set the temperature to 20 and the volume to six.,"{'temperature_c': 20, 'volume': 6}",4.0
+t29,2,1,0,Set the temperature to 20 and the volume to 30.,"{'temperature_c': 20, 'volume': 10}",22.18
+t29,2,2,0,Set the temperature to 30 and the volume to 30.,"{'temperature_c': 21.0, 'volume': 10}",8.86
+t30,0,0,1,Make it 22 degrees and take me to Augsburg,"{'temperature_c': 22, 'destination': 'Augsburg'}",5.79
+t30,0,1,1,Make it 22 degrees and take me to Augsburg,"{'temperature_c': 22, 'destination': 'Augsburg'}",5.63
+t30,0,2,1,Make it 22 degrees and take me to Augsburg,"{'temperature_c': 22, 'destination': 'Augsburg'}",4.36
+t30,1,0,1,make it twenty two degrees and take me two augsburg,"{'temperature_c': 22, 'destination': 'Augsburg'}",4.31
+t30,1,1,1,make it twenty two degrees and take me two augsburg,"{'temperature_c': 22, 'destination': 'Augsburg'}",4.46
+t30,1,2,1,make it twenty two degrees and take me two augsburg,"{'temperature_c': 22, 'destination': 'Augsburg'}",4.35
+t30,2,0,0,Make it 32 degrees and take me to Oxford.,"{'temperature_c': 21.0, 'destination': 'Oxford'}",12.65
+t30,2,1,0,Make the 22 degrees and take you to Oxford.,"{'temperature_c': 22, 'destination': 'Oxford'}",5.01
+t30,2,2,0,Make the 22 degrees and take me to Oxford.,"{'temperature_c': 22, 'destination': 'Oxford'}",5.33
