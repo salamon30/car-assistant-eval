@@ -1,19 +1,12 @@
 from dotenv import load_dotenv
 
 from car.agent import CarAssistant
+from car.checks import check
 from car.state import CarState
 from level0_tests import TEST
 from level1_noise import asr_style
 
 load_dotenv()
-
-
-def check(state, expect):
-    for key, wanted in expect.items():
-        actual = getattr(state, key)
-        if actual != wanted:
-            return False
-    return True
 
 
 RUNS = 3

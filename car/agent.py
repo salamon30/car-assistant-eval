@@ -1,9 +1,10 @@
 """The in-car assistant: an LLM that turns a spoken-style command into tool calls on CarState."""
 import json
 import os
+import time
 from dataclasses import dataclass, field
 
-from openai import OpenAI
+from openai import OpenAI, RateLimitError
 
 from car.state import CarState, navigate_to, set_temperature, set_volume
 
@@ -11,7 +12,9 @@ MODEL = os.getenv("NVIDIA_MODEL", "nvidia/nemotron-3.5-lightning-30b-a3b")
 MAX_STEPS = 4  # model calls per command; stops a confused model from looping forever
 
 SYSTEM_PROMPT = """You are the voice assistant of a car. Use the tools to carry out the driver's request.
-Only call a tool when the driver asks for something the tool does. If a tool returns an error,
+Only call a tool when the driver asks for something the tool does. If a value is outside a tool's
+range, still call the tool with exactly the value the driver said: the car limits or refuses it.
+Never choose a different value or convert units yourself. If a tool returns an error,
 tell the driver briefly. Answer in one short sentence, in the driver's language."""
 
 # What the model sees: each tool's name, what it does and which arguments it takes (JSON Schema).
@@ -63,14 +66,25 @@ class CarAssistant:
                              api_key=os.environ["NVIDIA_API_KEY"])
         self.model = model
 
+    def _ask(self, messages):
+        # The free NVIDIA tier allows only so many calls per minute: on 429, wait and retry.
+        for wait in [15, 30, 60, 120]:
+            try:
+                return self.client.chat.completions.create(
+                    model=self.model, messages=messages, tools=TOOLS,
+                    temperature=0, max_tokens=4000)
+            except RateLimitError:
+                print(f"   rate limit, waiting {wait} s")
+                time.sleep(wait)
+        return self.client.chat.completions.create(
+            model=self.model, messages=messages, tools=TOOLS, temperature=0, max_tokens=4000)
+
     def handle(self, command: str, state: CarState) -> AgentResult:
         messages = [{"role": "system", "content": SYSTEM_PROMPT},
                     {"role": "user", "content": command}]
         calls = []
         for _ in range(MAX_STEPS):
-            response = self.client.chat.completions.create(
-                model=self.model, messages=messages, tools=TOOLS,
-                temperature=0, max_tokens=4000)
+            response = self._ask(messages)
             message = response.choices[0].message
             if not message.tool_calls:  # no more tools wanted: this is the final answer
                 return AgentResult(reply=(message.content or "").strip(), tool_calls=calls)

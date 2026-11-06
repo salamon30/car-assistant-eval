@@ -1,33 +1,27 @@
 from dotenv import load_dotenv
 
 from car.agent import CarAssistant
+from car.checks import check
 from car.state import CarState
 from level0_tests import TEST
 
 load_dotenv()
 
 
-def check(state, expect):
-    for key, wanted in expect.items():
-        actual = getattr(state, key)
-        if actual != wanted:
-            return False
-    return True
-
+RUNS = 3
 
 assistant = CarAssistant()
-passed = 0
+total_passed = 0
 
 for test in TEST:
-    state = CarState()
-    result = assistant.handle(test["command"], state)
-    ok = check(state, test["expect"])
+    passes = 0
+    for run in range(RUNS):
+        state = CarState()
+        assistant.handle(test["command"], state)
+        if check(state, test["expect"]):
+            passes = passes + 1
+    total_passed = total_passed + passes
+    mark = "" if passes == RUNS else "   <-- fails"
+    print(test["id"], passes, "/", RUNS, "->", test["command"], mark)
 
-    if ok:
-        passed = passed + 1
-        print(test["id"], "PASS", "->", test["command"])
-    else:
-        print(test["id"], "FAIL", "->", test["command"])
-        print("   car state:", state)
-
-print(passed, "/", len(TEST), "passed")
+print("Total:", total_passed, "/", len(TEST) * RUNS)
